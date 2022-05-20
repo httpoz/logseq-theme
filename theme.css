@@ -1,1 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/**
+- https://imagecolorpicker.com
+- https://github.com/yoyurec/logseq-solarized-extended-theme/blob/main/src/custom.css
+**/
+
+/* Colors palette */
+.white-theme,
+.light-theme,
+html[data-theme='light'] {
+    --cp-red: #db4b4c;
+    --cp-black: #2b2e31;
+}
+
+/*
+  Remap common Logseq variables to reuse each other
+  and then remap to own small sized palette -`-cp-*`
+*/
+.white-theme,
+.light-theme,
+html[data-theme='light'],
+.dark-theme,
+html[data-theme='dark'] {
+  --ls-block-bullet-color: var(--cp-red);
+  --ls-primary-text-color: var(--cp-black);
+}
